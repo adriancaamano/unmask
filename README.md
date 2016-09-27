@@ -17,4 +17,4 @@ Tested with all modern browsers.
 
 
 ###License
-Unveil is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Unmask is licensed under the [MIT license](http://opensource.org/licenses/MIT).
