@@ -8,7 +8,7 @@ I have a couple ideas to make this awesome plugin better and i see there was a l
 New features:
 * Responsive data-src.
 * Background compatibility.
-* Tiny optimization at the code.
+* Tiny code optimization.
 * Load hidden images.
 
 
@@ -18,4 +18,3 @@ Tested with all modern browsers.
 
 ###License
 Unveil is licensed under the [MIT license](http://opensource.org/licenses/MIT).
-
