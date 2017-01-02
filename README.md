@@ -1,5 +1,5 @@
 #unmask.js
-###A very lightweight plugin to lazy load images for jQuery or Zepto.js
+###A very lightweight plugin to lazy load images for jQuery
 
 Two years ago was the last update from Unveil (https://github.com/luis-almeida/unveil).
 
@@ -11,10 +11,8 @@ New features:
 * Tiny code optimization.
 * Load hidden images.
 
-
 ###Browser support
 Tested with all modern browsers.
-
 
 ###License
 Unmask is licensed under the [MIT license](http://opensource.org/licenses/MIT).

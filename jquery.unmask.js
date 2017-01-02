@@ -16,7 +16,8 @@
           mobile: 767,
           tablet: 1024,
           threshold: 0,
-          background: false
+          background: false,
+          source: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
         },
         opts = $.extend( {}, defaults, options ),
         retina = window.devicePixelRatio > 1,
@@ -56,6 +57,13 @@
       loaded = inview.trigger('unmask');
       images = images.not(loaded);
     }
+
+    images.each(function() {
+      if (opts.background)
+        this.style.backgroundImage = 'url(' + opts.source + ')';
+      else
+        this.setAttribute('src', opts.source);
+    });
 
     $w.on('scroll.unmask resize.unmask lookup.unmask touchmove.unmask', unmask);
 
