@@ -59,10 +59,15 @@
     }
 
     images.each(function() {
-      if (opts.background)
+      var source = '';
+      if (opts.background) {
+        source = this.style.backgroundImage;
         this.style.backgroundImage = 'url(' + opts.source + ')';
-      else
+      } else {
+        source = this.getAttribute('src');
         this.setAttribute('src', opts.source);
+      }
+      this.setAttribute('data-src', this.getAttribute('data-src') || source);
     });
 
     $w.on('scroll.unmask resize.unmask lookup.unmask touchmove.unmask', unmask);
